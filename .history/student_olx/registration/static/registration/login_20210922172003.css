@@ -1,0 +1,16 @@
+#loginform{
+    display: flex;
+    justify-content: center;
+}
+#loginbutton{
+    margin-top: 10px;
+}
+/* .profileclass{
+    display: flex;
+    justify-content: center;
+} */
+.profile{
+    /* display: flex;
+    justify-content: center; */
+    padding-top: 10px;
+}

@@ -1,0 +1,19 @@
+
+/* #itemz{
+    display:flex;
+    justify-content: center;
+} */
+/* .row{
+    display: flex;
+    justify-content: space-evenly;
+} */
+/* .card{
+    
+    display:flex;
+    justify-content: space-around;
+} */
+.product{
+    display: flex;
+    justify-content: center;
+    margin-top:5px;
+}

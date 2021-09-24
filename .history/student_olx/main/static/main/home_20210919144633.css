@@ -1,0 +1,8 @@
+
+#itemz{
+    display:flex;
+    justify-content:space-evenly;
+}
+.row{
+    margin-left:10px;
+}

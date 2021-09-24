@@ -1,0 +1,22 @@
+{%extends 'main/base.html'%}
+{% load static %}
+{%block title%}
+Home
+{%endblock%}
+{% block styles %}
+<link rel="stylesheet" type="text/css" href="{% static 'main/home.css'%}">
+{% endblock %}
+{%block content %}
+<div id="itemz">
+{%for product in  products%}
+<div class=>
+<div class="card" style="width: 18rem;">
+  {% comment %} <img src="..." class="card-img-top" alt="..."> {% endcomment %}
+  <div class="card-body">
+    <h5 class="card-title">{{product.product_name}}</h5>
+    <p class="card-text">{{product.description}}</p>
+    <a href="#" class="btn btn-sm btn-primary">Buy</a>
+  </div>
+</div>
+{%endfor%}
+{%endblock %}

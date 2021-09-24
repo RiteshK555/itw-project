@@ -1,0 +1,78 @@
+{%extends 'main/base.html'%}
+{% load static %}
+{%block title%}
+Home
+{%endblock%}
+{% block styles %}
+<link rel="stylesheet" type="text/css" href="{% static 'main/home.css'%}">
+{% endblock %}
+{%block content %}
+<div id="itemz">
+<div class="row">
+  {%for %}
+  <div class="product col-lg-4  col-md-6 col-sm-12">
+    <div class="card" style="width: 18rem;">
+      <div class="card-body">
+        <h5 class="card-title">product name</h5>
+        <p class="card-text">product description</p>
+        <a href="#" class="btn btn-sm btn-primary">Buy</a>
+      </div>
+    </div>
+  </div>
+    <div class="col-lg-4 product col-md-6 col-sm-12">
+    <div class="card" style="width: 18rem;">
+      <div class="card-body">
+        <h5 class="card-title">product name</h5>
+        <p class="card-text">product description</p>
+        <a href="#" class="btn btn-sm btn-primary">Buy</a>
+      </div>
+    </div>
+  </div>
+    <div class="col-lg-4 product col-md-6 col-sm-12">
+    <div class="card" style="width: 18rem;">
+      <div class="card-body">
+        <h5 class="card-title">product name</h5>
+        <p class="card-text">product description</p>
+        <a href="#" class="btn btn-sm btn-primary">Buy</a>
+      </div>
+    </div>
+  </div>
+    <div class="col-lg-4 product col-md-6 col-sm-12">
+    <div class="card" style="width: 18rem;">
+      <div class="card-body">
+        <h5 class="card-title">product name</h5>
+        <p class="card-text">product description</p>
+        <a href="#" class="btn btn-sm btn-primary">Buy</a>
+      </div>
+    </div>
+  </div>
+    <div class="col-lg-4 product col-md-6 col-sm-12">
+    <div class="card" style="width: 18rem;">
+      <div class="card-body">
+        <h5 class="card-title">product name</h5>
+        <p class="card-text">product description</p>
+        <a href="#" class="btn btn-sm btn-primary">Buy</a>
+      </div>
+    </div>
+  </div>
+    <div class="col-lg-4 product col-md-6 col-sm-12">
+    <div class="card" style="width: 18rem;">
+      <div class="card-body">
+        <h5 class="card-title">product name</h5>
+        <p class="card-text">product description</p>
+        <a href="#" class="btn btn-sm btn-primary">Buy</a>
+      </div>
+    </div>
+  </div>
+</div>
+{% comment %} {%for product in  products%}
+
+<div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title">{{product.product_name}}</h5>
+    <p class="card-text">{{product.description}}</p>
+    <a href="#" class="btn btn-sm btn-primary">Buy</a>
+  </div>
+</div>
+{%endfor%} {% endcomment %}
+{%endblock %}

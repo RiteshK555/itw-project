@@ -1,0 +1,16 @@
+{%extends 'main/base.html'%}
+{%block title%}
+Create 
+{%endblock%}
+{% block styles %}
+<link rel="stylesheet" type="text/css" href="{% static 're/sell.css'%}">
+{% endblock %}
+{%block content%}
+<div class="formsell">
+<form method="post" action="/create/">
+{%csrf_token %}
+{{form.as_p}}
+<Button type="submit" name="save">Create New</Button>
+</form>
+</div>
+{%endblock%}

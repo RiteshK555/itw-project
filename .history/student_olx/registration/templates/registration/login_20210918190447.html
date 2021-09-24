@@ -1,0 +1,16 @@
+{%extends 'main/base.html'%}
+{% load static %}
+{%block title%}
+Login
+{%endblock%}
+{%load crispy_forms_tags%}
+{% block styles %}
+<link rel="stylesheet" type="text/css" href="{% static 'registration/login.css'%}">
+{% endblock %}
+{%block content%}
+{% if user.is_authenticated %}
+{{user}}
+{% endif %}
+
+
+{%endblock%}

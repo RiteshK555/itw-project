@@ -1,0 +1,18 @@
+{%extends 'main/base.html'%}
+{% load static %}
+{%block title%}
+Sell
+{%endblock%}
+{%load crispy_forms_tags%}
+{% block styles %}
+<link rel="stylesheet" type="text/css" href="{% static 'main/sell.css'%}">
+{% endblock %}
+{%block content%}
+<div class="formsell">
+<form method="POST" class="form-group" action="/sell/">
+{%csrf_token %}
+{{form|crispy}}
+<button type="submit"  class="btn sellbutton btn-sm btn-primary" name="save">Sell</button>
+</form>
+</div>
+{%endblock%}

@@ -1,0 +1,38 @@
+{%extends 'main/base.html'%}
+{% load static %}
+{%block title%}
+Login
+{%endblock%}
+{%load crispy_forms_tags%}
+{% block styles %}
+<link rel="stylesheet" type="text/css" href="{% static 'registration/login.css'%}">
+{% endblock %}
+{%block content%}
+{% if user.is_anonymous %}
+<div id="loginform">
+<form method="POST" autocomplete="off" class="form-group">
+{% csrf_token %}
+{{form|crispy}}
+<button type="submit" id="loginbutton" class="btn btn-sm btn-primary">
+Login
+</button>
+</form>
+</div>
+{% endif %}
+{%if user.is_authenticated %}
+{% comment %} <h5>Balance</h5> {% endcomment %}
+<div class="row">
+    <div class="profile col-lg-12  col-md-12 col-sm-12">
+    
+    <div/>
+</div>
+<div class="card profile" style="width: 18rem;">
+  {% comment %} <img src="..." class="card-img-top" alt="..."> {% endcomment %}
+  <div class="card-body">
+    <h5 class="card-title">Balance</h5>
+    <p class="card-text">{{balance}}₹</p>
+    <a href="" class="btn btn-sm btn-primary">Add funds</a>
+  </div>
+</div>
+{%endif%}
+{%endblock%}

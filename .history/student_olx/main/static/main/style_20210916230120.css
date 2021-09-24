@@ -1,0 +1,17 @@
+h1{
+    color:green;
+}
+.header{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color:#FEFBF3;
+}
+a{
+    color:#79B4B7;
+    text-decoration: none;
+}
+body{
+    margin:0;
+}

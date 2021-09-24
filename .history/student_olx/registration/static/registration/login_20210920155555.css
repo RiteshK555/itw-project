@@ -1,0 +1,11 @@
+#loginform{
+    display: flex;
+    justify-content: center;
+}
+#loginbutton{
+    margin-top: 10px;
+}
+.profile{
+    display: flex;
+    justify-content: center;
+}

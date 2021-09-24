@@ -1,0 +1,14 @@
+{%extends 'main/base.html'%}
+{% load static %}
+{%block title%}
+Register
+{%endblock%}
+{% block styles %}
+<link rel="stylesheet" type="text/css" href="{% static 'main/register.css'%}">
+{% endblock %}
+{%block content%}
+<form method="POST" class="form-group">
+{{form}}
+<button type="submit">
+</form>
+{%endblock%}

@@ -1,0 +1,13 @@
+
+/* #itemz{
+    display:flex;
+    justify-content: center;
+} */
+/* .row{
+    display: flex;
+    justify-content: center;
+} */
+.card{
+    display:flex;
+    justify-content: center;
+}

@@ -1,0 +1,29 @@
+{%extends 'main/base.html'%}
+{% load static %}
+{%block title%}
+Login
+{%endblock%}
+{%load crispy_forms_tags%}
+{% block styles %}
+<link rel="stylesheet" type="text/css" href="{% static 'registration/login.css'%}">
+{% endblock %}
+{%block content%}
+{% if user.is_anonymous %}
+<div id="loginform">
+{{hello}}
+<form method="POST" autocomplete="off" class="form-group">
+{% csrf_token %}
+{{form|crispy}}
+<button type="submit" id="loginbutton" class="btn btn-sm btn-primary">
+Login
+</button>
+</form>
+</div>
+{% endif %}
+{%if user.is_authenticated %}
+<div class="profile">
+<h5>Balance</h5>
+{{hello}}
+</div>}
+{%endif%}
+{%endblock%}

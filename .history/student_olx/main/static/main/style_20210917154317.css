@@ -1,0 +1,24 @@
+#itemz{
+    padding-left: 123px;
+}
+.card{
+    padding: left 12px;
+}
+h1{
+    color:green;
+}
+.header{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color:#FEFBF3;
+}
+a{
+    color:#00A19D;
+    text-decoration: none;
+}
+body{
+    margin:0;
+    background-color:#E8F6EF;
+}
